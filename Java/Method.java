@@ -310,8 +310,8 @@ public class Method {
 
     // _________________________________________________________________________________________________________________________
 
-    // Method ค้นหาสมาชิดใน Array
-    // และทำการ retunr คำแหน่ง(Index)ที่เจอออกไป ถ้าไม่เจอจะ return -1
+    // Method ค้นหาสมาชิกใน Array
+    // และทำการ return คำแหน่ง(Index)ที่เจอออกไป ถ้าไม่เจอจะ return -1
     // EX15
     static int SearchElement(int[] arr, int number) {
         for (int i = 0; i < arr.length; i++) {
