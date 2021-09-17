@@ -1,3 +1,4 @@
+import java.util.StringTokenizer;
 public class StringMethod {
     public static void main(String[] args) {
 
@@ -15,7 +16,7 @@ public class StringMethod {
         System.out.println(result.concat(" 13170"));
 
         // หาความยาว String ว่ามีกี่ตัวอักษร (รวมพื้นที่ว่าง)
-        // ใช้ .length()
+        // ใช้ .length(
         // จะ return ค่าออกมาเป็น Integer (จำนวนเต็ม)
         System.out.println(FullName.length());
         System.out.println(result.length());
@@ -47,6 +48,14 @@ public class StringMethod {
         // ถ้าหาไม่เจอจะ return -1
         // ข้อมูลที่ return จะเป็น Integer เสมอ
         System.out.println(FullName.indexOf("Kaewmee"));
+
+        // การตัดคำใน String
+        // StringTokennizer คือคลาสที่ใช้ในการตัดคำ
+        // ใช้งานได้ผ่านตัว Object
+        StringTokenizer FN = new StringTokenizer(FullName); // สร้าง Object โดยเก็บข้อมูล String FullName
+        System.out.println("Number of token : " + FN.countTokens()); // นับตัวแปร String FullName ว่ามีคำอยู่กี่คำ
+        System.out.println("Frist name is : " + FN.nextToken()); // สั่งเรียกคำแรกจาก String FullName มาแสดง ก็คือ Anupat
+        System.out.println("Surname name is : " + FN.nextToken()); // สั่งเรียกคำต่อไป String FullName มาแสดง ก็คือ Kaewmee
 
     }
 }
