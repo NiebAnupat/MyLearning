@@ -51,7 +51,5 @@ public class TryCatch_Exception {
         }
         // ทั้งนี้ Exception ยังมีอีกมากมาย สามารถดูประเภท Exception ได้ผ่านอินเทอร์เน็ตหรือหน้าต่างผลรันเมื่อเกิด Exception
 
-        // EX05
-
     }
 }
