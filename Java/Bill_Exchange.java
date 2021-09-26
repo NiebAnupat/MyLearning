@@ -28,7 +28,6 @@ public class Bill_Exchange {
             System.out.println("You received 20 bill " + (money / 20) + " bill");
             money %= 20;
         }
-
         sc.close();
     }
 }
