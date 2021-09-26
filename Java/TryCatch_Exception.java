@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class TryCatch_Exception {
     public static void main(String[] args) {
 
