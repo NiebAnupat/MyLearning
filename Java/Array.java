@@ -50,7 +50,7 @@ public class Array {
         //การเข้าถึง Element ใน Array ด้วย ForEech
         //สามารถเข้าถึง Element ใน Array ได้โดยตรง
         //ใช้ในกรณีต้องการค่าข้อมูลอย่างเดียว ไม่ต้องการ Index เช่น การหาผลรวมของข้อมูล
-        System.out.println("Using ForEech");
+        System.out.println("Using ForEach");
         for (int data : TestArray3) {
             System.out.println(data);
         }
