@@ -151,6 +151,35 @@ public class ReadWrite_File {
             System.out.println("Error : "+e);
         }
 
+        // ****************************************************************************************************************************
+
+        // PrintWriter
+
+        try {
+
+            System.out.println("Test PrintWriter!!!");
+
+            PrintWriter pw = new PrintWriter(new File("TestReadWriteFile//TestPrintWriter.txt"));
+
+            int i=2;
+            while (i<=5){
+                for (int j=1; j <= 12; j++) {
+                    int temp = i*j;
+                    pw.println(i+" x "+j+" = "+temp);
+
+                }
+                pw.println("**********************************************");
+                i++;
+            }
+
+            pw.close();
+            System.out.println("Test Scanner Done!!!");
+
+        }catch (Exception e){
+            System.out.println("Error : "+e);
+        }
+
+
     }
 
 }
