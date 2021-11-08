@@ -5,23 +5,22 @@ public class TestOnly {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Input Array Size : ");
-        int size = sc.nextInt();
 
-        int[] arr = new int[size];
+        System.out.print("Input Price : ");
+        double price = sc.nextDouble();
+        System.out.print("ค่าเสื่อมราคา (%) : ");
+        double s = sc.nextInt();
 
-        for(int i = 0; i < arr.length;i++){
-            System.out.print("Input Value of Index "+i+" : ");
-            arr[i] = sc.nextInt();
-        }
+        double temp1 = 0;
+       for (int i =1; i <= 5;i++){
 
-        for(int i = 0; i < arr.length;i++){
-            System.out.println("Index "+i+" is : "+arr[i]);
-        }
+           temp1 = price*(s/100);
+           price = price-temp1;
+           System.out.println("ในปีที่ "+i+" ค่าเสื่อมราคาคือ : "+temp1);
+           System.out.println("ราครสุทธิจะเหลือ : "+price);
 
-        for (int data : arr) {
-            System.out.println("Value is : " + data);
-        }
+           System.out.println("_______________________________________________");
+       }
 
     }
 }
