@@ -1,4 +1,4 @@
-public class Employee {
+abstract class Employee {
 
     public Employee () {
         System.out.println("Welcome new employee!");
@@ -14,6 +14,7 @@ public class Employee {
     private String Em_id = "";
     private String Em_name = "";
     private double Em_salary = 0.0;
+    private double Em_bonus = 0.0;
 
     public  void setEm_id (String em_id){
         Em_id = em_id;
@@ -26,6 +27,12 @@ public class Employee {
     public void setEm_salary (Double em_salary){
         Em_salary = em_salary;
     }
+
+    public abstract void setEm_bonus();
+
+    protected void setBonus(int bonus){ Em_bonus = Em_salary*bonus/100; }
+
+    public double getEm_Bonus (){ return Em_bonus; }
 
     public String getEm_id (){
         return Em_id;

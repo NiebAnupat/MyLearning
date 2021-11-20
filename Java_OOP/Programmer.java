@@ -1,17 +1,31 @@
-public class Programmer extends Employee{
+import java.util.ArrayList;
+class Programmer extends Employee{
 
-    public Programmer(){
+    ArrayList Pm_skill = new ArrayList();
+
+    public Programmer(){ System.out.println("Welcome new programmer!"); }
+    public Programmer(String id,String name, Double salary){
+        super(id, name, salary);
         System.out.println("Welcome new programmer!");
     }
 
-    private String Pm_skill = "";
+    public void setEm_bonus(){
+        setBonus(20);
+    }
 
-    public void setPm_skil (String skill) {
-        Pm_skill = skill;
+    public void setPm_skill (String...language) {
+        for (int i = 0; i < language.length; i++) {
+            Pm_skill.add(language[i]);
+        }
+
     }
 
     public void Display_skill (){
-        System.out.println("Programmer skill : "+Pm_skill);
+        for (int i = 0; i < Pm_skill.size(); i++) {
+            System.out.println("Programmer skill " + (i+1) + " : " + Pm_skill.get(i));
+        }
+
     }
+    
 
 }
