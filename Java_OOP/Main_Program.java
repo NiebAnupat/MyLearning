@@ -25,5 +25,10 @@ public class Main_Program {
 
         System.out.println("*******************************************\n");
 
+        Programmer pm3 = new Programmer("0005","Nieb Anupat",52300.0);
+        pm3.FullName("Anupat Kaewmee");
+        pm3.Tel("0661128806");
+        pm3.Address("Rangsit");
+
     }
 }

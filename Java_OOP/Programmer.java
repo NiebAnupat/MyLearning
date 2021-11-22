@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-class Programmer extends Employee{
+class Programmer extends Employee implements Info // สามารถ extends ได้เพียงคลาสเดียว ส่วน implements สามารถใช้ได้หลาย interface
+{
 
     ArrayList Pm_skill = new ArrayList();
 
@@ -26,6 +27,26 @@ class Programmer extends Employee{
         }
 
     }
-    
 
+    private String FullName = "";
+    private String Tel = "";
+    private String Address = "";
+
+    // implements method from Info
+    // เมื่อ implements interface ต้องทำการเรียก Method มา Override ทุกครั้ง
+
+    @Override
+    public void FullName(String Fullname) {
+        this.FullName = Fullname;
+    }
+
+    @Override
+    public void Tel(String Tel) {
+        this.Tel = Tel;
+    }
+
+    @Override
+    public void Address(String Address) {
+        this.Address = Address;
+    }
 }
