@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Java_Basic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_OOP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_Lab" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
