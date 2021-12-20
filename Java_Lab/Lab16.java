@@ -23,17 +23,17 @@ public class Lab16 {
 
             double[][] matrix = new double[row][col];
 
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix[i].length; j++) {
-                    matrix[i][j] = sc.nextDouble();
-                }
-            }
-
 //            for (int i = 0; i < matrix.length; i++) {
 //                for (int j = 0; j < matrix[i].length; j++) {
-//                    matrix[i][j] = rd.nextDouble(10000+1);
+//                    matrix[i][j] = sc.nextDouble();
 //                }
 //            }
+
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix[i].length; j++) {
+                    matrix[i][j] = rd.nextDouble(10000+1);
+                }
+            }
 
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[i].length; j++) {
