@@ -1,7 +1,10 @@
 #การแสดงผล
-#string => ข้อความ ตัวอักษร ' "" '''
-#number => integer , float
-#boolean => true , false
+"""
+string => ข้อความ ตัวอักษร ' "" '''
+number => integer , float
+boolean => true , false
+
+"""
 
 print("Hello Word!")
 print(-1)
