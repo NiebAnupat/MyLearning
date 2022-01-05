@@ -25,7 +25,7 @@ b = 3.14
 c = "20"
 
 c1 = int(c) # "20" = > 20 == string => int 
-a1 = str(a) # 10 => "10" == int => string
+a1 = str(a) # 10 => "10" == int => string 
 b1 = float(b) # string => float
 b2 = str(b) # float => string
 a2 = float(a) # int => float
@@ -35,6 +35,6 @@ b3 = int(b) # float => int
 result1 = float(a) + b # 10+3.14 = 13.14
 result2 = str(a) + c # "10" + "20" ="1020"
 
-print("Result 1 : " + str(result1))
-print("Result 2 : " + str(result2))
+print("Result 1 : " , result1)
+print("Result 2 : " , result2)
 
