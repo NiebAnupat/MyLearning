@@ -8,7 +8,7 @@ public class PP88 {
     System.out.print("Input Your Secret Code : ");
     String Number = sc.next();
     for (int i=0;i<Number.length();i++){
-        if (Character.isDigit(Number.charAt(i))){
+        if (Character.isDigit(Number.charAt(i))){ //ใช้คำสั่ง Character.isDigit เพื่อตรวจสอบข้อมูลที่เป็นตัวเลข
             Object = Object+Number.charAt(i);
         }
         else if (!Object.equals("")){
@@ -22,7 +22,7 @@ public class PP88 {
             }
         }
     }
-    Object = String.valueOf(Code);
+    Object = String.valueOf(Code); //คำสั่ง valueof คือ
     while(Object.length()<4){
         Object = "0"+Object;
     }

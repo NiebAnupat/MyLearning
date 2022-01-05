@@ -10,7 +10,7 @@ class PP77{
     String Product ="", List = "";
     System.out.println("-----Product List-----");
     String [][]Subject = {{"Candy","5"},{"Jelly","10"},{"Snack","20"}};
-    for (int i = 0; i<Subject.length; i++){
+    for (int i = 0; i<Subject.length; i++){ //ใช้ length เพื่อนับจำนวนข้อมูล
         System.out.print(Subject[i][0]+" : ");
         for (int j=1; j<Subject[i].length; j++) {
             System.out.println(Subject[i][j]+" Baht");
@@ -22,9 +22,9 @@ class PP77{
             Product = sc.next();
             for (int i =0;i<3;i++){
             if (Product.equals(Subject[i][0])) {
-                Name = Integer.parseInt(Subject[i][1]);
+                Name = Integer.parseInt(Subject[i][1]);//เปลี่ยน String เป็น Int
                 }
-                else return;
+                else return; //ใช้คำสั่ง Return เพื่อออกจากโปรแกรม
             }
             if (Product.equals("-1")) break;
             System.out.print("Enter Number To Buy : ");
