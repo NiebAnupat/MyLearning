@@ -9,4 +9,5 @@
 *.ipr
 *.iws
 
-out\.
+out/
+Flutter/

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 void main(List<String> args) {
   // Declare a variable
 
@@ -33,4 +35,12 @@ void main(List<String> args) {
   print(list[0]); // list[0] is Hello, list[1] is Dart
   print(map[
       "Keyword2"]); // map["Keyword"] is Hello Dart, map["Keyword2"] is Hello World
+
+  const int num1 = 1; // num is const int can not be changed
+  // num = 3; // Error: num is const
+  final int num2 = 1; // num2 is final int can not be changed
+  // num2 = 3; // Error: num2 is final
+
+  // const int num3 = 10 + i; // num3 is const int can not use i to calculate
+  final int num4 = 10 + i; // num4 is final int can use i to calculate
 }
