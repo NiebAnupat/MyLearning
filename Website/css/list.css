@@ -1,0 +1,49 @@
+/* Language: css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+      font-family: "Open Sans", sans-serif;
+      align-items: center;
+}
+
+body {
+      padding: 0px;
+      margin: 0px;
+}
+
+#list1 {      
+      /* border: 1px solid black; */
+      margin: 0px;
+      padding: 20px;
+      width: 100%;
+}
+
+#list1 li {
+      /* border: 1px solid black; */
+      display: inline-block;
+}
+
+.submenu li {
+      margin-left:40px;
+}
+
+#list1 ol li{      
+      display: block;
+}
+
+#list1 ul li{
+      margin-left:90px;
+      display: block;
+}
+
+#list2 {
+      margin: 0px;
+      padding: 20px;
+      /* border: 1px solid black; */
+
+}
+
+#list2 li {
+      /* border: 1px solid black; */
+      display: inline;
+}

@@ -47,10 +47,7 @@ public class Lab_Nieb {
                 }
                 System.out.println();
             }
-
-
         }
-
     }
 
     private static double max (double[][] matrix) {
@@ -60,7 +57,6 @@ public class Lab_Nieb {
                 if ( matrix[i][j] > max ) max = matrix[i][j];
             }
         }
-
         return max;
     }
 
@@ -71,7 +67,6 @@ public class Lab_Nieb {
                 if ( matrix[i][j] < min ) min = matrix[i][j];
             }
         }
-
         return min;
     }
 
