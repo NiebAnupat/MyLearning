@@ -1,0 +1,75 @@
+
+body{
+      text-align: center;
+}
+
+h1{
+      display: none;
+}
+
+a{
+      text-decoration: none;
+      color: white;      
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 500px) {
+
+      body{
+            background-color: red;
+      }
+      #smartphone{
+            display: block;
+      }
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+      body{
+            background-color: blue;
+      }
+      #tablet{
+            height: 100vh;
+            color: white;
+            display: block;
+      }
+}
+      
+
+/* Labtop and Desktop */
+@media (min-width: 769px) and (max-width: 1200px) {
+      body{
+            background-color: green;
+      }
+      #normal{
+            
+            color: white;
+            display: block;
+      }
+}
+
+/* TV */
+@media (min-width: 1201px) {
+      body{
+            background-color: yellow;
+      }
+      #widescreen{
+            color: black;
+            display: block;
+      }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+      body{
+            background-color: orange;
+      }
+      #landscape{
+            color: black;
+            display: block;
+      }
+}
+
+
+      
